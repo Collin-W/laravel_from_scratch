@@ -36,5 +36,6 @@ Route::get('/services', 'PagesController@services');
 //     //the . is able to concat this as our url is a string
 //     return 'This user is '.$id;
 // });
-
+// 
 //just note that is best not to directly return a view from the route
+Route::resource('posts', 'PostsController');
